@@ -1,0 +1,76 @@
+.header{
+    height: 54vw;
+    margin: 20px auto;
+    background: url('/header_img.png') no-repeat;
+    background-size: contain;
+    align-items: center;
+    position: relative;
+    border-radius: 5%;
+}
+
+/* .header {
+  background-image: url('../assets/header_img.png');  adjust the path as per your folder structure 
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+   color: white; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 50px;
+} 
+*/
+
+
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 30%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw,22px);
+}
+
+.header-contents p{
+    color: white;
+    font-size: 1vw;
+    line-height: 1.5vw;
+}
+
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,3px);
+    border-radius: 15px;
+}
+@media (max-width:1050px) {
+    .header-contents{
+        max-width: 45%;
+    }
+    
+}
+@media (max-width:750px) {
+    .header-contents{
+        max-width: 55%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+        font-size: 8px;
+    }
+    
+}
